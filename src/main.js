@@ -1,14 +1,5 @@
-function fire(bool) {
-    if (bool) {
-        var foo = 'bar'; // Same as declair on the top 
-        let bar = 'foo'; // Scope variable
+let names = ['John', 'Matt', 'Mary'];
 
+names = names.map(name => `${name} is cool`);
 
-    }else {
-        // console.log(foo) // Hoisting - The variable exists but it was not initialized - Returns undefined
-        console.log(bar) // Returns reference error - bar is available only on its scope
-
-    }
-}
-
-fire(false);
+console.log(names);
