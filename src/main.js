@@ -39,9 +39,14 @@
 
 // OBJECT DESTRUCTURING AS A FUNCTION ARGUMENT
 
+
+// ES6
 function greet({name, age}) {
     console.log(`my name is ${name} and i am ${age} years old`);
 }
+// ES6
+let greet = ({name, age}) => console.log(`my name is ${name} and i am ${age} years old`)
+
 
 greet({
     name: 'Thiago',
